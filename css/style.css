@@ -1,6 +1,4 @@
-html {
-  box-sizing: border-box;
-}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,25 +9,39 @@ body {
   text-decoration: none;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 a {
   text-decoration: none;
 }
 
 .btn {
+  display: inline-block;
+  height: 38px;
+
+  font-size: 14px;
+  line-height: 38px;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
 
   border: 0;
+  border-radius: 2px;
 }
 
 .red-btn {
-  height: 38px;
-
   background-color: #ee3643;
 }
 
-.red-btn:hover {
+.red-btn:hover,
+.red-btn:focus {
   background-color: #ca2c37;
 }
 
@@ -37,30 +49,40 @@ a {
   background-color: #ba2732;
 }
 
-.green-btn {
+.btn-buy {
+  width: 135px;
+
+  text-align: center;
+
   background-color: #63a63e;
   box-shadow: inset 0 -3px 0 0 #367315;
 }
 
-.green-btn:hover {
+.btn-buy:hover,
+.btn-buy:focus {
   background-color: #5fbb2d;
 }
 
-.green-btn:active {
+.btn-buy:active {
   background-color: #518534;
 }
 
-.border-btn {
+.btn-bookmarks {
+  width: 135px;
+
+  line-height: 32px;
+  text-align: center;
   color: #32425c;
 
   border: 3px solid #63a63e;
 }
 
-.border-btn:hover {
+.btn-bookmarks:hover,
+.btn-bookmarks:focus {
   border-color: #32425c;
 }
 
-.border-btn:active {
+.btn-bookmarks:active {
   color: rgba(50, 66, 92, 0.3);
 
   border-color: rgba(50, 66, 92, 0.3);
@@ -70,12 +92,13 @@ a {
 .site-navigation,
 .promo,
 .goods,
-.manufacturers,
+.brands,
 .services-slider,
 .delivery,
-.filters,
+.order,
 .breadcrumbs,
-.footer-bottom ul {
+.footer-bottom ul,
+.pagination {
   list-style: none;
 }
 
@@ -100,7 +123,6 @@ a {
 .main-header-logo {
   position: relative;
 
-  box-sizing: border-box;
   width: 220px;
   height: 47px;
 
@@ -132,9 +154,33 @@ a {
 }
 
 .user {
+  display: inline-block;
+  height: 45px;
+
+  font-size: 21px;
+  line-height: 45px;
+  text-align: center;
   color: black;
 
   background-color: white;
+  border-radius: 2px;
+}
+
+.user:hover,
+.user:focus {
+  color: #ee3643;
+}
+
+.user:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.login {
+  width: 121px;
+}
+
+.registration {
+  width: 150px;
 }
 
 .header-adress {
@@ -151,7 +197,8 @@ a {
   border: 0;
 }
 
-.btn-checkout:hover {
+.btn-checkout:hover,
+.btn-checkout:focus {
   background-color: #5fbb2d;
 }
 
@@ -173,7 +220,6 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-sizing: border-box;
   width: 940px;
   height: 60px;
   padding-bottom: 5px;
@@ -183,9 +229,28 @@ a {
   box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
+.site-navigation li {
+  line-height: 55px;
+}
+
 .site-navigation a {
+  display: inline-block;
+  height: auto;
+
   color: white;
 }
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+
+  background-color: #1d2739;
+}
+
 /*Навигация конец*/
 /*Header конец*/
 
@@ -214,6 +279,26 @@ a {
   background-color: #ffc047;
 }
 
+.btn-promo {
+  display: inline-block;
+  width: 135px;
+  height: 38px;
+
+  line-height: 38px;
+  text-align: center;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-promo:hover,
+.btn-promo:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+} 
+
+.btn-promo:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .promo span {
   font-weight: bold;
   font-size: 24px;
@@ -230,7 +315,79 @@ a {
   background-color: #535151fd;
 }
 
+.btn-catalog {
+  padding-right: 47px;
+  padding-left: 49px;
+}
+
 /*Промо конец*/
+
+/*Товары старт*/
+
+.goods {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goods li {
+  border: 1px solid #e5e5e5;
+}
+
+.goods li:hover,
+.goods li:focus {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+/*Поведение карточки товара и кнопок "Купить" и "В закладки" при наведении - нужно найти решение*/
+
+/*Товары конец*/
+
+.btn-price {
+  font-size: 17px;
+  line-height: 18px;
+  color: white;
+}
+
+.btn-popular-and-brands {
+  padding-right: 55px;
+  padding-left: 55px;
+}
+
+.btn-about {
+  padding-right: 40px;
+  padding-left: 41px;
+}
+
+.btn-contacts {
+  padding-right: 59px;
+  padding-left: 64px;
+}
+
+.brands {
+  display: flex;
+}
+
+/*Картинки не выровнены по вертикали*/
+
+.brands a {
+  display: inline-block;
+  width: 220px;
+  height: 145px;
+
+  line-height: 145px;
+  text-align: center;
+
+  border: 1px solid #e5e5e5;
+}
+
+.brands a:hover,
+.brands a:focus {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.brands a:active {
+  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
+}
 
 .column {
   display: flex;
@@ -261,15 +418,6 @@ a {
   text-decoration: line-through;
 }
 
-.price {
-  width: 141px;
-  height: 38px;
-
-  font-size: 17px;
-  line-height: 18px;
-  color: white;
-}
-
 /*Footer старт*/
 
 .footer-top {
@@ -282,7 +430,6 @@ a {
 .footer-logo {
   position: relative;
 
-  box-sizing: border-box;
   width: 220px;
   height: 68px;
 
@@ -306,7 +453,6 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-sizing: border-box;
   padding-left: 0;
 
   list-style: none;
@@ -356,7 +502,9 @@ a {
 }
 
 .footer-site-navigation a:hover,
-.footer-bottom a:hover {
+.footer-site-navigation a:focus,
+.footer-bottom a:hover,
+.footer-bottom a:focus {
   text-decoration: underline;
 }
 
@@ -381,7 +529,104 @@ h1 {
 .filters-name {
   font-size: 13px;
   line-height: 18px;
+  font-family: "PTsans", sans-serif;
   color: black;
   text-transform: uppercase;
 }
+
+.breadcrumbs a {
+  color: black;
+}
+
+.filters fieldset {
+  font-family: "PTsans", sans-serif;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.filters legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filters label {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.order li {
+  display: inline-block;
+
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  border-bottom: 1px dotted #ee3643;
+}
+
+.order a {
+  color: rgba(0, 0, 0, 0.18);
+}
+
+.order a:visited {
+  color: #ee3643;
+}
+
+.order a:hover,
+.order a:focus {
+  color: black;
+}
+
+.order a:active {
+  color: #ee3643;
+}
+
+.direction {
+  border: none;
+}
+
+.pagination li {
+  display: inline-block;
+
+  line-height: 38px;
+  text-align: center;
+}
+
+.pagination a {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+
+  color: black;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+  border-color: #bdc6ca;
+}
+
+.pagination a:active {
+  border-color: #ee3643;
+}
+
+.pagination .here {
+  width: 38px;
+  height: 38px;
+
+  background-color: #ee3643;
+  border: 1px solid #ee3643;
+  border-radius: 2px;
+}
+
+a.next {
+  width: 140px;
+}
+
+
+
 /*Каталог конец*/
