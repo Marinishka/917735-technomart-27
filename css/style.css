@@ -37,7 +37,7 @@ a {
 }
 
 .red-btn {
-  background-color: #ca2c37;
+  background-color: #ee3643;
 }
 
 .red-btn:hover,
@@ -122,6 +122,11 @@ a {
   margin-left: auto;
 }
 
+.container-header {
+  padding-top: 46px;
+  padding-bottom: 60px;
+}
+
 .container h2 {
   font-size: 30px;
   line-height: 30px;
@@ -132,7 +137,6 @@ a {
   display: flex;
   width: 100%;
   height: 42px;
-  margin-bottom: 46px;
 
   line-height: 18px;
 
@@ -145,7 +149,6 @@ a {
   width: 220px;
   height: 47px;
 
-  background-color: #ee3643;
   box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -182,6 +185,10 @@ input[type="search"] {
   text-decoration: none;
 
   border: 0;
+}
+
+.not-empty {
+  background-color: #ee3643;
 }
 
 input[type="search"]:hover,
@@ -259,11 +266,13 @@ input[type="search"]:focus {
 .header-address {
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
   font-style: normal;
 }
 
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 281px;
 }
@@ -290,6 +299,49 @@ input[type="search"]:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.user-entered {
+  width: 299px;
+  height: 45px;
+
+  line-height: 45px;
+  text-align: center;
+
+  background-color: white;
+}
+
+.user-entered a {
+  font-size: 21px;
+  color: black;
+}
+
+.users-items a {
+  font-size: 16px;
+  color: #32425c;
+
+  border-bottom: 1px solid #32425c;
+}
+
+.users-items a:hover,
+.users-items a:focus {
+  color: #ee3643;
+  border-bottom-color: #ee3643;
+}
+
+.user-entered a:active,
+.users-items a:active {
+color: rgba(0, 0, 0, 0.3);
+border-bottom-color: rgba(0, 0, 0, 0.3);
+}
+
+.user-navigation li:nth-of-type(2) {
+  margin-left: 20px;
+}
+
+.user-navigation li:nth-of-type(3) {
+  margin-right: 50px;
+}
+
+
 .login {
   width: 121px;
 }
@@ -306,7 +358,6 @@ input[type="search"]:focus {
   width: 940px;
   height: 60px;
   margin-top: 60px;
-  margin-bottom: 60px;
   padding-bottom: 5px;
   padding-left: 0;
 
@@ -315,11 +366,15 @@ input[type="search"]:focus {
 }
 
 .site-navigation li {
+  flex-grow: 1;
+
   line-height: 55px;
+  text-align: center;
 }
 
 .site-navigation a {
   display: inline-block;
+  width: 100%;
   height: auto;
 
   color: white;
@@ -351,8 +406,8 @@ input[type="search"]:focus {
 }
 
 .container-promo {
-  margin-top: 59px;
-  margin-bottom: 53px;
+  padding-top: 59px;
+  padding-bottom: 53px;
 }
 
 .promo-materials {
@@ -374,6 +429,8 @@ input[type="search"]:focus {
 }
 
 .promo-delivery {
+  margin-bottom: 0;
+
   background-color: #ffc047;
 }
 
@@ -413,6 +470,7 @@ input[type="search"]:focus {
 }
 
 .slider section {
+  float: left;
   width: 620px;
   height: 266px;
 
@@ -420,7 +478,7 @@ input[type="search"]:focus {
 
   background-color: #535151fd;
 }
-/*Не  вернорасположены элементы внутри слайдеров*/
+
 .slider h2 {
   display: inline-block;
   margin: 0;
@@ -440,6 +498,22 @@ input[type="search"]:focus {
   font-size: 18px;
   line-height: 24px;
 }
+/**/
+
+.slider {
+  position: relative;
+}
+
+.slider-inner{
+overflow: hidden;
+}
+
+}
+.sliders {
+  width: 200%;
+}
+
+/**/
 
 .drill {
   background-image: url("../img/slide-image-first.jpg");
@@ -450,7 +524,7 @@ input[type="search"]:focus {
 }
 
 .btn-catalog {
-  margin-top: 124px;
+  margin-top: 110px;
   margin-left: 23px;
   padding-right: 47px;
   padding-left: 49px;
@@ -479,21 +553,25 @@ input[type="search"]:focus {
 }
 
 .goods {
+  font-family: "PT Sans", "Arial", sans-serif;
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 940px;
-  margin-top: 20px;
-  margin-bottom: 21px;
+  
+  padding-top: 20px;
+  padding-bottom: 31px;
+  
 }
 
 .goods li {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   width: 220px;
   height: 318px;
-
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 21px;
   border: 1px solid #e5e5e5;
 }
 
@@ -503,43 +581,53 @@ input[type="search"]:focus {
 }
 
 .goods-photo {
-  order: 0;
+  order: -1;
 }
 
 .goods h3 {
-  order: 1;
-
+  width: 160px;
+  text-align: center;
+  
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .goods span {
   color: #999999;
+  margin-left: auto;
+  margin-right: auto;
   text-decoration: line-through;
+  font-size: 17px;
+  text-transform: uppercase;
 }
 
-/*Поведение карточки товара и кнопок "Купить" и "В закладки" при наведении - нужно найти решение*/
-
-/*Товары конец*/
-
 .btn-price {
-  display: inline-block;
   width: 141px;
   height: 38px;
-  padding-left: 36px;
-
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: bold;
   font-size: 17px;
   line-height: 38px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: white;
   text-transform: uppercase;
-
+  position: absolute;
+  top: 259px;
+  left: 43px;
   background-image: url("../img/button.svg");
-  background-size: 141px 38px;
+ 
 }
+
+/*Поведение карточки товара и кнопок "Купить" и "В закладки" при наведении - нужно найти решение*/
+
+/*Товары конец*/
 
 .btn-popular-and-brands {
   padding-right: 55px;
@@ -559,7 +647,7 @@ input[type="search"]:focus {
 
 .brands {
   display: flex;
-  margin-bottom: 85px;
+  padding-bottom: 85px;
 }
 
 .brands a {
@@ -597,6 +685,7 @@ input[type="search"]:focus {
 
 .services {
   flex-direction: column;
+  padding-top: 40px;
 }
 
 .services h2 {
@@ -605,10 +694,38 @@ input[type="search"]:focus {
   text-transform: uppercase;
 }
 
-.services p {
+.services > p {
+  width: 398px;
+
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.services-slider h3 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.services-slider p {
+  display: inline-block;
+  margin: 0;
+}
+
+.services-delivery p:nth-of-type(1) {
+  width: 275px;
+}
+
+.services-delivery p:nth-of-type(2) {
+  width: 200px;
+}
+
+.services-guarantees p:nth-of-type(1) {
+  width: 340px;
+}
+
+.services-credit p {
+  width: 279px;
 }
 
 .btn-slider {
@@ -630,11 +747,14 @@ input[type="search"]:focus {
   line-height: 20px;
 }
 
+.about-and-contacts {
+  padding-top: 82px;
+  padding-bottom: 68px;
+}
+
 .about {
   width: 519px;
   height: 371px;
-  margin-top: 82px;
-  margin-bottom: 68px;
 }
 
 .about p {
@@ -655,8 +775,6 @@ input[type="search"]:focus {
 .contacts {
   width: 300px;
   height: 371px;
-  margin-top: 82px;
-  margin-bottom: 68px;
 }
 
 .contacts h2,
@@ -690,6 +808,7 @@ input[type="search"]:focus {
 .footer-logo {
   position: relative;
 
+  display: inline-block;
   width: 220px;
   height: 68px;
   margin-bottom: 30px;
@@ -720,12 +839,18 @@ input[type="search"]:focus {
 
   list-style: none;
   font-size: 18px;
+  line-height: 17px;
 }
 
 .footer-site-navigation li {
   flex-grow: 1;
-  min-width: 55px;
-  height: 17px;
+  min-width: 75px;
+
+  text-align: center;
+}
+
+.footer-site-navigation li:not(:first-child) {
+  margin-left: 29px;
 }
 
 .first-line {
@@ -738,19 +863,21 @@ input[type="search"]:focus {
 
 .first-line:hover,
 .first-line:focus {
-  border-bottom: 1 solid white;
+  border-bottom: 1px solid white;
 }
 
 .second-line:hover,
 .second-line:focus,
 .footer-bottom a:hover,
 .footer-bottom a:focus {
-  border-bottom: 1 solid #ffda96;
+  border-bottom: 1px solid #ffda96;
 }
 
 
 .footer-site-navigation a:active {
   color: rgba(241, 245, 247, 0.5);
+
+  border: none;
 }
 
 .footer-bottom {
@@ -782,11 +909,13 @@ input[type="search"]:focus {
 }
 
 .developers {
+  line-height: 18px;
   color: white;
 }
 
 .developers li {
   display: inline-block;
+  width: 120px;
 }
 
 .developers li:nth-of-type(2) {
@@ -800,26 +929,109 @@ input[type="search"]:focus {
 
 /*Footer конец*/
 
+/*Форма обращения "Напишите нам" старт*/
+
+.write-us {
+  width: 620px;
+  min-height: 430px;
+  padding-top: 48px;
+
+  border-top: 7px solid #ee3643;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.container-write-us {
+  width: 620px;
+  padding-right: 80px;
+  padding-bottom: 37px;
+  padding-left: 80px;
+}
+
+.write-us label {
+  font-size: 18px;
+}
+
+.write-us input:not(input[type="submit"]),
+.write-us textarea {
+  border: 2px solid #dee3e4;
+}
+
+.write-us p {
+  display: inline-block;
+  width: 220px;
+  margin: 0;
+}
+
+.write-us p:nth-child(2) {
+  margin-left: 16px;
+}
+
+input[name="name"],
+input[name="email"] {
+  width: 220px;
+  height: 38px;
+  margin-bottom: 22px;
+  padding: 15px 16px;
+  outline: none;
+}
+
+textarea[name="letter"] {
+  width: 460px;
+  height: 114px;
+  outline: none;
+}
+
+.back-btn-send {
+  width: 100%;
+  height: 112px;
+
+  line-height: 112px;
+  text-align: center;
+
+  background-color: #f4f4f4;
+}
+
+.btn-send {
+  width: 460px;
+}
+
+.write-us input:hover {
+ border: 2px solid #b5b5b5;
+}
+
+.write-us input:focus,
+.write-us textarea:focus {
+  
+  border: 2px solid  #ee3643;
+}
+
+
+/*Форма обращения "Напишите нам" конец*/
+
 /*Каталог старт*/
 .category {
   width: 940px;
   height: 89px;
+  margin: 0;
   padding-top: 32px;
   padding-left: 30px;
-
-  background-color: #f2f6f8;
-}
-
-h1 {
-  margin: 0;
 
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+
+  background-color: #f2f6f8;
+}
+
+.breadcrumbs {
+  order: -1;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .breadcrumbs,
-.filters-name {
+.filter-form h2,
+.sorting h2 {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -827,15 +1039,50 @@ h1 {
   text-transform: uppercase;
 }
 
+.breadcrumbs li,
+.sorting h2,
+ul.order {
+  display: inline-block;
+}
+
 .breadcrumbs a {
   color: black;
+}
+
+.filter-form {
+  padding-top: 20px;
+  width: 220px;
+}
+
+.filter-form h2 {
+  display: inline-block;
+  width: 220px;
+  height: 38px;
+  padding-left: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 38px;
+
+  background-color: #f7f3ec;
+}
+
+.filter-form legend {
+  padding-top: 15px;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #e5e5e5;
+}
+
+.catalog-column {
+  padding-top: 20px;
 }
 
 .filters fieldset {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
-
+  padding: 0;
   border: none;
+  padding-bottom: 20px;
 }
 
 .filters legend {
@@ -847,20 +1094,49 @@ h1 {
 .filters label {
   font-size: 15px;
   line-height: 30px;
+  display: block;
+}
+
+button[name="result"] {
+  width: 140px;
+  height: 38px;
+  margin-top: 80px;
+  text-transform: uppercase;
+
+  background-color: white;
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-column {
+  width: 700px;
+  height: 1142px;
+}
+
+.sorting {
+  width: 700px;
+  height: 38px;
+  padding-left: 19px;
+
+  background-color: #f7f3ec;
+}
+
+.order {
+  margin-left: 139px;
 }
 
 .order li {
   display: inline-block;
-
+ margin-left: 20px;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-
-  border-bottom: 1px dotted #ee3643;
+  
 }
+
 
 .order a {
   color: rgba(0, 0, 0, 0.18);
+  border-bottom: 1px dotted #ee3643;
 }
 
 .order a:visited {
@@ -874,6 +1150,7 @@ h1 {
 
 .order a:active {
   color: #ee3643;
+  border: none;
 }
 
 .direction {
