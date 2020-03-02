@@ -186,6 +186,8 @@ a {
 
 .main-header-logo {
   position: relative;
+  top: 0;
+  left: 0;
 
   width: 220px;
   height: 47px;
@@ -459,7 +461,7 @@ input[type="search"]:focus ~ svg path {
   position: relative;
 
   width: 100%;
-  height: 45px;
+  min-height: 45px;
   margin-bottom: 3px;
   padding-top: 10px;
   padding-right: 35px;
@@ -750,6 +752,7 @@ input[type="search"]:focus ~ svg path {
 
 .promo span {
   display: inline-block;
+  max-width: 135px;
 
   font-weight: bold;
   font-size: 24px;
@@ -909,6 +912,7 @@ input[type="search"]:focus ~ svg path {
 }
 
 .popular h2 {
+  max-width: 620px;
   margin: 0;
   margin-top: 1px;
 
@@ -934,6 +938,7 @@ input[type="search"]:focus ~ svg path {
   width: 220px;
   min-height: 318px;
   margin-right: 20px;
+  padding-bottom: 65px;
 
   border: 1px solid #e5e5e5;
 }
@@ -1035,12 +1040,12 @@ input[type="search"]:focus ~ svg path {
 }
 
 .goods-btn {
-  display: none;
+  visibility: hidden;
 }
 
 .goods-item:hover .goods-btn,
 .goods-item:focus .goods-btn {
-  display: block;
+  visibility: visible;
 }
 
 /*Товары конец*/
@@ -1667,11 +1672,63 @@ ul.developers {
   position: relative;
   z-index: 25;
 
-  width: 620px;
+  display: none;
 
-  border-top: 7px solid #ee3643;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
-  visibility: hidden;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-closed {
+  animation: reverse bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-close {
@@ -1685,6 +1742,7 @@ ul.developers {
 
   background-color: white;
   border: 0;
+  cursor: pointer;
 }
 
 .modal-back-btn {
@@ -1707,12 +1765,14 @@ ul.developers {
   top: 50%;
   left: 50%;
 
+  width: 620px;
   min-height: 430px;
   margin-top: -215px;
   margin-left: -310px;
   padding-top: 48px;
 
   background-color: white;
+  border-top: 7px solid #ee3643;
 }
 
 .container-write-us {
@@ -2081,6 +2141,11 @@ input[type="checkbox"]:checked + label::before {
   background-image: url("../img/radio-on.svg");
 }
 
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label {
+  opacity: 0.2;
+}
+
 .filters-result {
   width: 140px;
   height: 38px;
@@ -2130,7 +2195,8 @@ input[type="checkbox"]:checked + label::before {
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
+  max-width: 368px;
 }
 
 .order li {
@@ -2142,7 +2208,7 @@ input[type="checkbox"]:checked + label::before {
   text-transform: uppercase;
 }
 
-.order > li:nth-last-of-type(n+3) {
+.order > li:nth-last-of-type(n+2) {
   padding-right: 59px;
   padding-left: 9px;
 }
@@ -2177,6 +2243,12 @@ input[type="checkbox"]:checked + label::before {
   padding-left: 41px;
 
   border: none;
+}
+
+.direction li {
+  display: inline-block;
+
+  vertical-align: middle;
 }
 
 .direction-item:not(:last-of-type) {
@@ -2324,11 +2396,13 @@ a.next {
   top: 50%;
   left: 50%;
 
+  width: 620px;
   height: 282px;
   margin-top: -141px;
   margin-left: -310px;
 
   background-color: white;
+  border-top: 7px solid #ee3643;
 }
 
 .item-in-basket p {
