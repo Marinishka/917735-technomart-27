@@ -1,95 +1,95 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Каталог магазина «Техномарт»</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="main-header-top">
-        <div class="container">
-          <a class="main-header-logo basic-btn" href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="109" height="19" viewBox="0 0 138 23">
-              <path fill="#FFF" fill-rule="evenodd" d="M132.538 3.057v18.9h-2.7v-18.9h-4.8v-2.1h12.3v2.1h-4.8zm-10.395 11.115c-.47.59-1.06 1.01-1.77 1.26s-1.555.375-2.535.375c-.46 0-.98-.03-1.56-.09-.58-.06-1.06-.13-1.44-.21v6.45h-2.7v-20.7c.76-.22 1.525-.375 2.295-.465.77-.09 1.605-.135 2.505-.135 1.2 0 2.22.125 3.06.375.84.25 1.52.665 2.04 1.245.52.58.9 1.35 1.14 2.31.24.96.36 2.15.36 3.57 0 1.46-.115 2.68-.345 3.66-.23.98-.58 1.765-1.05 2.355zm-1.53-8.715c-.15-.72-.385-1.29-.705-1.71a2.55 2.55 0 0 0-1.215-.885c-.49-.17-1.075-.255-1.755-.255h-2.1v11.1h2.1c.68 0 1.265-.085 1.755-.255a2.55 2.55 0 0 0 1.215-.885c.32-.42.555-.99.705-1.71.15-.72.225-1.62.225-2.7s-.075-1.98-.225-2.7zm-15.225 11.1h-6l-1.35 5.4h-2.7l5.1-21h3.9l5.1 21h-2.7l-1.35-5.4zm-2.94-12.6h-.12l-2.49 10.5h5.1l-2.49-10.5zm-12.96 2.4h-.149l-4.351 12.9h-2.699l-4.351-12.9h-.15l-.9 15.6h-2.7l1.2-21h3.3l4.89 14.4h.12l4.89-14.4h3.301l1.199 21h-2.7l-.9-15.6zm-20.16 13.65c-.56.82-1.235 1.4-2.024 1.74-.791.34-1.696.51-2.716.51-1.019 0-1.925-.17-2.715-.51-.79-.34-1.465-.92-2.025-1.74-.56-.82-.985-1.925-1.275-3.315-.29-1.39-.435-3.135-.435-5.235 0-2.1.145-3.845.435-5.235.29-1.39.715-2.495 1.275-3.315.56-.82 1.235-1.4 2.025-1.74.79-.34 1.696-.51 2.715-.51 1.02 0 1.925.17 2.716.51.789.34 1.464.92 2.024 1.74s.985 1.925 1.275 3.315c.29 1.39.436 3.135.436 5.235 0 2.1-.146 3.845-.436 5.235-.29 1.39-.715 2.495-1.275 3.315zm-1.304-12.99c-.211-1.16-.486-2.08-.826-2.76-.34-.68-.74-1.15-1.2-1.41-.46-.26-.93-.39-1.41-.39-.479 0-.95.13-1.409.39-.461.26-.861.73-1.201 1.41-.34.68-.614 1.6-.825 2.76-.21 1.16-.314 2.64-.314 4.44 0 1.8.104 3.28.314 4.44.211 1.16.485 2.08.825 2.76.34.68.74 1.15 1.201 1.41.459.26.93.39 1.409.39.48 0 .95-.13 1.41-.39.46-.26.86-.73 1.2-1.41.34-.68.615-1.6.826-2.76.21-1.16.314-2.64.314-4.44 0-1.8-.104-3.28-.314-4.44zm-16.185 5.34h-6.301v9.6h-2.699v-21h2.699v9.3h6.301v-9.3h2.699v21h-2.699v-9.6zm-14.25 9.6l-3.75-9-3.75 9h-2.7l4.5-10.8-4.05-10.2h2.7l3.3 8.4 3.3-8.4h2.7l-4.05 10.2 4.5 10.8h-2.7zm-22.05-21h10.2v2.1h-7.5v6.9h6.6v2.1h-6.6v7.8h7.5v2.1h-10.2v-21zm-7.2 21h-2.7v-18.9h-4.8v-2.1h12.3v2.1h-4.8v18.9z"/>
-            </svg>
-          </a>
-          <form class="search" action="https://echo.htmlacademy.ru" method="GET">          
-            <input type="search" name="search" placeholder="Поиск:">
-            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-              <path  fill="#231F20" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
-            </svg>
-          </form>
-          <a class="header-btn  header-bookmarks" href="#">
-            <svg class="header-icon icon-bookmark" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
-              <path fill="#E72C2D" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
-            </svg>
-            Закладки:
-            <span> 0</span>
-          </a>
-          <a class="header-btn header-truck not-empty" href="#">
-            <svg class="header-icon icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-              <circle cx="4.5" cy="13.5" r="1.5"/>
-              <circle cx="12.5" cy="13.5" r="1.5"/>
-              <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-            </svg>
-            Корзина:
-            <span> 10</span>
-          </a>
-          <a class="btn-checkout" href="#">Оформить заказ</a>
-        </div>
-      </div> 
-      <div class="container container-header">
-        <h1>Интернет-магазин
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Каталог магазина «Техномарт»</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="main-header-top">
+      <div class="container">
+        <a class="main-header-logo basic-btn" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="109" height="19" viewBox="0 0 138 23">
+            <path fill="#FFF" fill-rule="evenodd" d="M132.538 3.057v18.9h-2.7v-18.9h-4.8v-2.1h12.3v2.1h-4.8zm-10.395 11.115c-.47.59-1.06 1.01-1.77 1.26s-1.555.375-2.535.375c-.46 0-.98-.03-1.56-.09-.58-.06-1.06-.13-1.44-.21v6.45h-2.7v-20.7c.76-.22 1.525-.375 2.295-.465.77-.09 1.605-.135 2.505-.135 1.2 0 2.22.125 3.06.375.84.25 1.52.665 2.04 1.245.52.58.9 1.35 1.14 2.31.24.96.36 2.15.36 3.57 0 1.46-.115 2.68-.345 3.66-.23.98-.58 1.765-1.05 2.355zm-1.53-8.715c-.15-.72-.385-1.29-.705-1.71a2.55 2.55 0 0 0-1.215-.885c-.49-.17-1.075-.255-1.755-.255h-2.1v11.1h2.1c.68 0 1.265-.085 1.755-.255a2.55 2.55 0 0 0 1.215-.885c.32-.42.555-.99.705-1.71.15-.72.225-1.62.225-2.7s-.075-1.98-.225-2.7zm-15.225 11.1h-6l-1.35 5.4h-2.7l5.1-21h3.9l5.1 21h-2.7l-1.35-5.4zm-2.94-12.6h-.12l-2.49 10.5h5.1l-2.49-10.5zm-12.96 2.4h-.149l-4.351 12.9h-2.699l-4.351-12.9h-.15l-.9 15.6h-2.7l1.2-21h3.3l4.89 14.4h.12l4.89-14.4h3.301l1.199 21h-2.7l-.9-15.6zm-20.16 13.65c-.56.82-1.235 1.4-2.024 1.74-.791.34-1.696.51-2.716.51-1.019 0-1.925-.17-2.715-.51-.79-.34-1.465-.92-2.025-1.74-.56-.82-.985-1.925-1.275-3.315-.29-1.39-.435-3.135-.435-5.235 0-2.1.145-3.845.435-5.235.29-1.39.715-2.495 1.275-3.315.56-.82 1.235-1.4 2.025-1.74.79-.34 1.696-.51 2.715-.51 1.02 0 1.925.17 2.716.51.789.34 1.464.92 2.024 1.74s.985 1.925 1.275 3.315c.29 1.39.436 3.135.436 5.235 0 2.1-.146 3.845-.436 5.235-.29 1.39-.715 2.495-1.275 3.315zm-1.304-12.99c-.211-1.16-.486-2.08-.826-2.76-.34-.68-.74-1.15-1.2-1.41-.46-.26-.93-.39-1.41-.39-.479 0-.95.13-1.409.39-.461.26-.861.73-1.201 1.41-.34.68-.614 1.6-.825 2.76-.21 1.16-.314 2.64-.314 4.44 0 1.8.104 3.28.314 4.44.211 1.16.485 2.08.825 2.76.34.68.74 1.15 1.201 1.41.459.26.93.39 1.409.39.48 0 .95-.13 1.41-.39.46-.26.86-.73 1.2-1.41.34-.68.615-1.6.826-2.76.21-1.16.314-2.64.314-4.44 0-1.8-.104-3.28-.314-4.44zm-16.185 5.34h-6.301v9.6h-2.699v-21h2.699v9.3h6.301v-9.3h2.699v21h-2.699v-9.6zm-14.25 9.6l-3.75-9-3.75 9h-2.7l4.5-10.8-4.05-10.2h2.7l3.3 8.4 3.3-8.4h2.7l-4.05 10.2 4.5 10.8h-2.7zm-22.05-21h10.2v2.1h-7.5v6.9h6.6v2.1h-6.6v7.8h7.5v2.1h-10.2v-21zm-7.2 21h-2.7v-18.9h-4.8v-2.1h12.3v2.1h-4.8v18.9z" />
+          </svg>
+        </a>
+        <form class="search" action="https://echo.htmlacademy.ru" method="GET">
+          <input type="search" name="search" placeholder="Поиск:">
+          <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+            <path fill="#231F20" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+          </svg>
+        </form>
+        <a class="header-btn  header-bookmarks" href="#">
+          <svg class="header-icon icon-bookmark" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+            <path fill="#E72C2D" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" />
+          </svg>
+          Закладки:
+          <span> 0</span>
+        </a>
+        <a class="header-btn header-truck not-empty" href="#">
+          <svg class="header-icon icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+            <circle cx="4.5" cy="13.5" r="1.5" />
+            <circle cx="12.5" cy="13.5" r="1.5" />
+            <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
+          </svg>
+          Корзина:
+          <span> 10</span>
+        </a>
+        <a class="btn-checkout" href="#">Оформить заказ</a>
+      </div>
+    </div>
+    <div class="container container-header">
+      <h1>Интернет-магазин
           строительных материалов
           и&nbsp;инструментов для ремонта</h1>
-          <div class="header-info">
-            <a class="main-header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          </div> 
-          <div class="user-navigation">
-            <ul class="user-entered">
-              <li>
-                <a class="user-name" href="#">Равшан Джамшутович</a>
-              </li>
-              <li>
-                <a class="user-logout" href="#">
-                  <span class="visually-hidden">Выйти из аккаунта</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="user-navigation-items">
-              <li class="users-items"><a href="#">Мои заказы</a></li>
-              <li class="users-items"><a href="#">Личный кабинет</a></li>
-            </ul>
-          </div>
-        <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
+      <div class="header-info">
+        <a class="main-header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <address class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
       </div>
-    </header>
-    <main>
-      <div class="container">
+      <div class="user-navigation">
+        <ul class="user-entered">
+          <li>
+            <a class="user-name" href="#">Равшан Джамшутович</a>
+          </li>
+          <li>
+            <a class="user-logout" href="#">
+              <span class="visually-hidden">Выйти из аккаунта</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="user-navigation-items">
+          <li class="users-items"><a href="#">Мои заказы</a></li>
+          <li class="users-items"><a href="#">Личный кабинет</a></li>
+        </ul>
+      </div>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
       <h1 class="category">Перфораторы</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item breadcrumbs-index">
           <a href="index.html" title="Главная">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12">
               <g fill="#C1C6CE">
-                  <path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/>
-                  <path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/>
+                <path d="M3 8v4h4V8h2v4h4V8L8 3.516z" />
+                <path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z" />
               </g>
-          </svg>
+            </svg>
           </a>
         </li>
         <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
@@ -120,7 +120,7 @@
             </div>
           </fieldset>
           <fieldset class="filter filter-brands">
-          <legend>Производители:</legend>
+            <legend>Производители:</legend>
             <input type="checkbox" name="Bosch" id="Bosch" checked>
             <label class="filter-label" for="Bosch">Bosch</label>
             <input type="checkbox" name="Interskol" id="Interskol" disabled>
@@ -133,7 +133,7 @@
             <label class="filter-label" for="Hitachi">Hitachi</label>
           </fieldset>
           <fieldset class="filter filter-current">
-           <legend>Питание:</legend>
+            <legend>Питание:</legend>
             <input class="current-radio-battery" type="radio" name="power" id="battery" checked>
             <label class="filter-label current-label-battery" for="battery">Аккумуляторные</label>
             <input class="current-radio-grid" type="radio" name="power" id="grid" disabled>
@@ -164,9 +164,9 @@
               <div class="goods-btn">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                    <circle cx="4.5" cy="13.5" r="1.5"/>
-                    <circle cx="12.5" cy="13.5" r="1.5"/>
-                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                    <circle cx="4.5" cy="13.5" r="1.5" />
+                    <circle cx="12.5" cy="13.5" r="1.5" />
+                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>
                   Купить</a>
                 <a class="btn btn-bookmarks" href="#">В закладки</a>
@@ -180,25 +180,25 @@
               <div class="goods-btn">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                    <circle cx="4.5" cy="13.5" r="1.5"/>
-                    <circle cx="12.5" cy="13.5" r="1.5"/>
-                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                    <circle cx="4.5" cy="13.5" r="1.5" />
+                    <circle cx="12.5" cy="13.5" r="1.5" />
+                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>Купить</a>
                 <a class="btn btn-bookmarks" href="#">В закладки</a>
               </div>
               <span>30500 р.</span>
               <a class="btn-price" href="#">25500 р.</a>
             </li>
-            <li  class="goods-item" tabindex="0">
+            <li class="goods-item" tabindex="0">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <div class="new flag">Новинка</div>
               <img class="goods-photo" src="img/hammer-drill-first.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <div class="goods-btn">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                    <circle cx="4.5" cy="13.5" r="1.5"/>
-                    <circle cx="12.5" cy="13.5" r="1.5"/>
-                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                    <circle cx="4.5" cy="13.5" r="1.5" />
+                    <circle cx="12.5" cy="13.5" r="1.5" />
+                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>Купить</a>
                 <a class="btn btn-bookmarks" href="#">В закладки</a>
               </div>
@@ -210,9 +210,9 @@
               <div class="goods-btn">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                    <circle cx="4.5" cy="13.5" r="1.5"/>
-                    <circle cx="12.5" cy="13.5" r="1.5"/>
-                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                    <circle cx="4.5" cy="13.5" r="1.5" />
+                    <circle cx="12.5" cy="13.5" r="1.5" />
+                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>Купить</a>
                 <a class="btn btn-bookmarks" href="#">В закладки</a>
               </div>
@@ -226,9 +226,9 @@
               <div class="goods-btn">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                    <circle cx="4.5" cy="13.5" r="1.5"/>
-                    <circle cx="12.5" cy="13.5" r="1.5"/>
-                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                    <circle cx="4.5" cy="13.5" r="1.5" />
+                    <circle cx="12.5" cy="13.5" r="1.5" />
+                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>Купить</a>
                 <a class="btn btn-bookmarks" href="#">В закладки</a>
               </div>
@@ -241,9 +241,9 @@
               <div class="goods-btn">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                    <circle cx="4.5" cy="13.5" r="1.5"/>
-                    <circle cx="12.5" cy="13.5" r="1.5"/>
-                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                    <circle cx="4.5" cy="13.5" r="1.5" />
+                    <circle cx="12.5" cy="13.5" r="1.5" />
+                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>Купить</a>
                 <a class="btn btn-bookmarks" href="#">В закладки</a>
               </div>
@@ -256,9 +256,9 @@
               <div class="goods-btn">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                    <circle cx="4.5" cy="13.5" r="1.5"/>
-                    <circle cx="12.5" cy="13.5" r="1.5"/>
-                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                    <circle cx="4.5" cy="13.5" r="1.5" />
+                    <circle cx="12.5" cy="13.5" r="1.5" />
+                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>Купить</a>
                 <a class="btn btn-bookmarks" href="#">В закладки</a>
               </div>
@@ -271,9 +271,9 @@
               <div class="goods-btn">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                    <circle cx="4.5" cy="13.5" r="1.5"/>
-                    <circle cx="12.5" cy="13.5" r="1.5"/>
-                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                    <circle cx="4.5" cy="13.5" r="1.5" />
+                    <circle cx="12.5" cy="13.5" r="1.5" />
+                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>Купить</a>
                 <a class="btn btn-bookmarks" href="#">В закладки</a>
               </div>
@@ -286,9 +286,9 @@
               <div class="goods-btn">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                    <circle cx="4.5" cy="13.5" r="1.5"/>
-                    <circle cx="12.5" cy="13.5" r="1.5"/>
-                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                    <circle cx="4.5" cy="13.5" r="1.5" />
+                    <circle cx="12.5" cy="13.5" r="1.5" />
+                    <path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
                   </svg>Купить</a>
                 <a class="btn btn-bookmarks" href="#">В закладки</a>
               </div>
@@ -304,66 +304,67 @@
         </section>
       </div>
     </div>
-      <section class="information">
-        <div class="container">
+    <section class="information">
+      <div class="container">
         <h2>Пара слов о перфораторах</h2>
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
         <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.</p>
         <p>В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-       </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-top">
-        <div class="container">
-          <div>
-            <a class="footer-logo basic-btn" href="index.html"> <img src="img/logo.svg" width="138" height="23" alt="Логотип магазина «Техномарт»"></a>
-            <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-            <a class="footer-address" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          </div>
-          <ul class="footer-site-navigation">
-            <li><a class="first-line" href="#">Компания</a></li>
-            <li><a class="first-line" href="#">Новости</a></li>
-            <li><a class="first-line" href="catalog.html">Каталог</a></li>
-            <li><a class="first-line" href="#">Доставка</a></li>
-            <li><a class="first-line" href="#">Контакты</a></li>
-            <li><a class="second-line" href="#">Материалы</a></li>
-            <li><a class="second-line" href="#">Техника</a></li>
-            <li><a class="second-line" href="#">Инструмент</a></li>
-            <li><a class="second-line" href="#">Спецпредложения</a></li>
-          </ul>
-        </div>
       </div>
-      <div class="footer-bottom">
-        <div class="container">
-          <p>&copy; 2010—2019 Компания &laquo;Техномарт&raquo;<br>
-          Все права защищены</p>
-          <ul class="socials">
-            <li><a class="socials-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-            <li><a class="socials-fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
-            <li><a class="socials-inst" href="#"><span class="visually-hidden">Instagram</span></a></li>
-          </ul>
-          <ul class="developers">
-            <li>Обратная связь:
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
-            <li>Разработано —
-              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></li>
-             </ul>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div>
+          <a class="footer-logo basic-btn" href="index.html"> <img src="img/logo.svg" width="138" height="23" alt="Логотип магазина «Техномарт»"></a>
+          <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a class="footer-address" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
-      </div>
-    </footer>
-    <div class="modal item-in-basket">
-      <button class="modal-close" aria-label="Закрыть сообщение">
-        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-        <path fill="#EE3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414L13.273 10.5z"/>
-        </svg>
-      </button>
-      <p>Товар добавлен в корзину!</p>
-      <div class="modal-back-btn">
-      <a class="btn basic-btn modal-btn-chekout"  href="#">Оформить заказ</a>
-      <button class="modal-btn-continue-shopping" type="button">Продолжить покупки</button>
+        <ul class="footer-site-navigation">
+          <li><a class="first-line" href="#">Компания</a></li>
+          <li><a class="first-line" href="#">Новости</a></li>
+          <li><a class="first-line" href="catalog.html">Каталог</a></li>
+          <li><a class="first-line" href="#">Доставка</a></li>
+          <li><a class="first-line" href="#">Контакты</a></li>
+          <li><a class="second-line" href="#">Материалы</a></li>
+          <li><a class="second-line" href="#">Техника</a></li>
+          <li><a class="second-line" href="#">Инструмент</a></li>
+          <li><a class="second-line" href="#">Спецпредложения</a></li>
+        </ul>
       </div>
     </div>
-    <script src="js/popup-addItem.js"></script>
-  </body>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2010—2019 Компания &laquo;Техномарт&raquo;
+          <br> Все права защищены</p>
+        <ul class="socials">
+          <li><a class="socials-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li><a class="socials-fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="socials-inst" href="#"><span class="visually-hidden">Instagram</span></a></li>
+        </ul>
+        <ul class="developers">
+          <li>Обратная связь:
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+          <li>Разработано —
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="modal item-in-basket">
+    <button class="modal-close" aria-label="Закрыть сообщение">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+        <path fill="#EE3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414L13.273 10.5z" />
+      </svg>
+    </button>
+    <p>Товар добавлен в корзину!</p>
+    <div class="modal-back-btn">
+      <a class="btn basic-btn modal-btn-chekout" href="#">Оформить заказ</a>
+      <button class="modal-btn-continue-shopping" type="button">Продолжить покупки</button>
+    </div>
+  </div>
+  <script src="js/popup-addItem.js"></script>
+</body>
+
 </html>
