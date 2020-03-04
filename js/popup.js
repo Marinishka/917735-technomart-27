@@ -1,7 +1,7 @@
 var writeUsBtn = document.querySelector(".btn-contacts");
 var writeUs = document.querySelector(".write-us");
 var close = writeUs.querySelector(".modal-close");
-var name = writeUs.querySelector("[name=name]");
+var login = writeUs.querySelector("[name=login]");
 var email = writeUs.querySelector("[name=email]");
 var letter = writeUs.querySelector("[name=letter]");
 var form = writeUs.querySelector("form");
@@ -19,7 +19,7 @@ writeUsBtn.addEventListener("click", function(evt) {
   evt.preventDefault();
   writeUs.classList.remove("modal-closed");
   writeUs.classList.add("modal-show");
-  name.focus();
+  login.focus();
   if (storage) {
     email.value = storage;
   }
@@ -28,12 +28,14 @@ writeUsBtn.addEventListener("click", function(evt) {
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
   writeUs.classList.add("modal-closed");
-  writeUs.classList.remove("modal-show");
-  writeUs.classList.remove("modal-error");
+  setTimeout(function(){
+    writeUs.classList.remove("modal-show");
+    writeUs.classList.remove("modal-error");
+  }, 700);
 });
 
 form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
+  evt.preventDefault();
 });
 
 form.addEventListener("submit", function (evt) {
