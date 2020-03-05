@@ -16,23 +16,30 @@ buy.forEach(function(btn) {
 
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
-  addItem.classList.remove("modal-show");
   addItem.classList.add("modal-closed");
+  setTimeout(function(){
+    writeUs.classList.remove("modal-show");
+  }, 700);
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-      if (addItem.classList.contains("modal-show")) {
-        addItem.classList.remove("modal-show");
-        addItem.classList.add("modal-closed");
-        addItem.classList.remove("modal-error");
-      }
+    if (addItem.classList.contains("modal-show")) {
+      addItem.classList.add("modal-closed");
+      setTimeout(function(){
+        writeUs.classList.remove("modal-show");
+        writeUs.classList.remove("modal-error");
+      }, 700);
     }
-  });
+  }
+});
 
 continueShoping.addEventListener("click", function(evt) {
   evt.preventDefault();
-  addItem.classList.remove("modal-show");
   addItem.classList.add("modal-closed");
+  setTimeout(function(){
+    writeUs.classList.remove("modal-show");
+    writeUs.classList.remove("modal-error");
+  }, 700);
 });

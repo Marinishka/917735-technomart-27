@@ -5,7 +5,7 @@
   <title>HTML Academy: Каталог магазина «Техномарт»</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-min.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -121,15 +121,15 @@
           </fieldset>
           <fieldset class="filter filter-brands">
             <legend>Производители:</legend>
-            <input class="visually-hidden" type="checkbox" name="Bosch" id="Bosch" checked>
+            <input class="visually-hidden filter-brands-checkbox" type="checkbox" name="Bosch" id="Bosch" checked>
             <label class="filter-label" for="Bosch">Bosch</label>
-            <input class="visually-hidden" type="checkbox" name="Interskol" id="Interskol" disabled>
+            <input class="visually-hidden filter-brands-checkbox" type="checkbox" name="Interskol" id="Interskol" disabled>
             <label class="filter-label" for="Interskol">Интерскол</label>
-            <input class="visually-hidden" type="checkbox" name="Makita" id="Makita" checked>
+            <input class="visually-hidden filter-brands-checkbox" type="checkbox" name="Makita" id="Makita" checked>
             <label class="filter-label" for="Makita">Makita</label>
-            <input class="visually-hidden" type="checkbox" name="Dewalt" id="Dewalt">
+            <input class="visually-hidden filter-brands-checkbox" type="checkbox" name="Dewalt" id="Dewalt">
             <label class="filter-label" for="Dewalt">Dewalt</label>
-            <input class="visually-hidden" type="checkbox" name="Hitachi" id="Hitachi">
+            <input class="visually-hidden filter-brands-checkbox" type="checkbox" name="Hitachi" id="Hitachi">
             <label class="filter-label" for="Hitachi">Hitachi</label>
           </fieldset>
           <fieldset class="filter filter-current">
@@ -161,7 +161,7 @@
             <li class="goods-item" tabindex="0">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <img class="goods-photo" src="img/hammer-drill-first.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-              <div class="goods-btn">
+              <div class="goods-btn visually-hidden">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                     <circle cx="4.5" cy="13.5" r="1.5" />
@@ -177,7 +177,7 @@
             <li class="goods-item" tabindex="0">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <img class="goods-photo" src="img/hammer-drill-second.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-              <div class="goods-btn">
+              <div class="goods-btn visually-hidden">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                     <circle cx="4.5" cy="13.5" r="1.5" />
@@ -193,7 +193,7 @@
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <div class="new flag">Новинка</div>
               <img class="goods-photo" src="img/hammer-drill-first.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-              <div class="goods-btn">
+              <div class="goods-btn visually-hidden">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                     <circle cx="4.5" cy="13.5" r="1.5" />
@@ -207,7 +207,7 @@
             <li class="goods-item" tabindex="0">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <img class="goods-photo" src="img/hammer-drill-first.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-              <div class="goods-btn">
+              <div class="goods-btn visually-hidden">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                     <circle cx="4.5" cy="13.5" r="1.5" />
@@ -223,7 +223,7 @@
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <div class="new flag">Новинка</div>
               <img class="goods-photo" src="img/hammer-drill-second.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-              <div class="goods-btn">
+              <div class="goods-btn visually-hidden">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                     <circle cx="4.5" cy="13.5" r="1.5" />
@@ -238,7 +238,7 @@
             <li class="goods-item" tabindex="0">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <img class="goods-photo" src="img/hammer-drill-first.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-              <div class="goods-btn">
+              <div class="goods-btn visually-hidden">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                     <circle cx="4.5" cy="13.5" r="1.5" />
@@ -253,7 +253,7 @@
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <div class="new flag">Новинка</div>
               <img class="goods-photo" src="img/hammer-drill-first.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-              <div class="goods-btn">
+              <div class="goods-btn visually-hidden">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                     <circle cx="4.5" cy="13.5" r="1.5" />
@@ -268,7 +268,7 @@
             <li class="goods-item" tabindex="0">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <img class="goods-photo" src="img/hammer-drill-second.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-              <div class="goods-btn">
+              <div class="goods-btn visually-hidden">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                     <circle cx="4.5" cy="13.5" r="1.5" />
@@ -283,7 +283,7 @@
             <li class="goods-item" tabindex="0">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <img class="goods-photo" src="img/hammer-drill-first.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-              <div class="goods-btn">
+              <div class="goods-btn visually-hidden">
                 <a class="btn btn-buy" href="#">
                   <svg class="icon-truck buy-icon-truck" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
                     <circle cx="4.5" cy="13.5" r="1.5" />
@@ -336,8 +336,7 @@
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; 2010—2019 Компания &laquo;Техномарт&raquo;
-          <br> Все права защищены</p>
+        <p>&copy; 2010—2019 Компания &laquo;Техномарт&raquo; Все права защищены</p>
         <ul class="socials">
           <li><a class="socials-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
           <li><a class="socials-fb" href="#"><span class="visually-hidden">Facebook</span></a></li>
@@ -353,18 +352,14 @@
     </div>
   </footer>
   <div class="modal item-in-basket">
-    <button class="modal-close" aria-label="Закрыть сообщение">
-      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-        <path fill="#EE3643" d="M13.273 10.5l7.422-7.422a1.003 1.003 0 0 0 0-1.414L19.336.305a1.003 1.003 0 0 0-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 0 0-1.414 0L.305 1.664a1.003 1.003 0 0 0 0 1.414L7.727 10.5.306 17.922a1.003 1.003 0 0 0 0 1.414l1.359 1.359a1.003 1.003 0 0 0 1.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 0 0 1.414 0l1.359-1.359a1.003 1.003 0 0 0 0-1.414L13.273 10.5z" />
-      </svg>
-    </button>
+    <button class="modal-close" aria-label="Закрыть сообщение"></button>
     <p>Товар добавлен в корзину!</p>
     <div class="modal-back-btn">
       <a class="btn basic-btn modal-btn-chekout" href="#">Оформить заказ</a>
       <button class="modal-btn-continue-shopping" type="button">Продолжить покупки</button>
     </div>
   </div>
-  <script src="js/popup-addItem.js"></script>
+  <script src="js/popup-add-Item-min.js"></script>
 </body>
 
 </html>

@@ -56,8 +56,10 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (writeUs.classList.contains("modal-show")) {
       writeUs.classList.add("modal-closed");
-      writeUs.classList.remove("modal-show");
-      writeUs.classList.remove("modal-error");
+      setTimeout(function(){
+        writeUs.classList.remove("modal-show");
+        writeUs.classList.remove("modal-error");
+      }, 700);
     }
   }
 });
