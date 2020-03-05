@@ -858,7 +858,6 @@ input[type="search"]:focus ~ svg path {
   background: url("../img/new-flag.png") no-repeat 0 0;
 }
 .goods img {
-  max-width: auto;
   height: 170px;
 }
 .popular-goods {
@@ -1674,6 +1673,9 @@ textarea[name="letter"] {
   height: 446px;
   margin-top: -223px;
   margin-left: -470px;
+}
+iframe {
+  border:0;
 }
 /*Карта конец*/
 /*Каталог старт*/
