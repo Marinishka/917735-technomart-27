@@ -147,7 +147,7 @@
         <div class="sorting">
           <h2>Сортировка:</h2>
           <ul class="order">
-            <li><a class="order-item" href="#">По цене</a></li>
+            <li><a class="order-item active" href="#">По цене</a></li>
             <li><a class="order-item" href="#">По типу</a></li>
             <li><a class="order-item" href="#">По функционалу</a></li>
           </ul>
@@ -317,22 +317,31 @@
   <footer>
     <div class="footer-top">
       <div class="container">
-        <div>
-          <a class="footer-logo basic-btn" href="index.html"> <img src="img/logo.svg" width="138" height="23" alt="Логотип магазина «Техномарт»"></a>
+        <div class="footer-left">
+          <a class="footer-logo basic-btn"><img src="img/logo.svg" width="138" height="23" alt="Логотип магазина «Техномарт»"></a>
           <address class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           <a class="footer-address" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
-        <ul class="footer-site-navigation">
-          <li><a class="first-line" href="#">Компания</a></li>
-          <li><a class="first-line" href="#">Новости</a></li>
-          <li><a class="first-line" href="catalog.html">Каталог</a></li>
-          <li><a class="first-line" href="#">Доставка</a></li>
-          <li><a class="first-line" href="#">Контакты</a></li>
-          <li><a class="second-line" href="#">Материалы</a></li>
-          <li><a class="second-line" href="#">Техника</a></li>
-          <li><a class="second-line" href="#">Инструмент</a></li>
-          <li><a class="second-line" href="#">Спецпредложения</a></li>
-        </ul>
+        <div class="footer-right">
+          <div class="footer-site-navigation footer-up">
+            <a class="first-line" href="#">Компания
+            </a>
+            <a class="first-line" href="#">Новости
+            </a>
+            <a class="first-line" href="catalog.html">Каталог
+            </a>
+            <a class="first-line" href="#">Доставка
+            </a>
+            <a class="first-line" href="#">Контакты
+            </a>
+          </div>
+          <div class="footer-site-navigation footer-down">
+            <a class="second-line" href="#">Материалы</a>
+            <a class="second-line" href="#">Техника</a>
+            <a class="second-line" href="#">Инструмент</a>
+            <a class="second-line" href="#">Спецпредложения</a>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
@@ -360,7 +369,7 @@
       <button class="modal-btn-continue-shopping" type="button">Продолжить покупки</button>
     </div>
   </div>
-  <script src="js/popup-add-Item-min.js"></script>
+  <script src="js/popup-min.js"></script>
 </body>
 
 </html>
